@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: white;
+    border-bottom-right-radius: 170px;
+    border-top-left-radius: 20px;
+    margin: 80px auto;
+    padding: 50px;
+    width: 700px;
+}
+
+.calender {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    font-weight: 550;
+    letter-spacing: 3px;
+    padding: 0 3px;
+}
+
+.input-day,
+.input-month,
+.input-year {
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: 550;
+    margin: 10px 0;
+    padding: 10px 0px;
+    padding-left: 15px;
+    /* display: inline-block; */
+    width: 120px;
+}
+
+.error-day,
+.error-month,
+.error-year {
+    color: hsl(0, 100%, 67%);
+    font-size: 11px;
+}
+
+.error-ii {
+    color: hsl(0, 100%, 67%);
+    display: none;
+    font-size: 11px;
+}
+
+.icon-stage {
+    align-items: center;
+    display: flex;
+    transform: translateY(-10px);
+
+}
+
+.hr-line span {
+    display: inline-block;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    width: 520px;
+}
+
+.icon {
+    align-items: center;
+    display: flex;
+}
+
+.icon .submit-btn {
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    height: 10vh;
+    padding: 10px;
+}
+
+.icon img {
+    object-position: center;
+    width: 80%;
+}
+
+.section {
+    font-size: 70px;
+    font-weight: 800;
+    color: black;
+    line-height: 1.1em;
+}
+
+.section span {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 5px;
+    padding-right: 8px;
+
+}
+
+
+/* psuedo class */
+
+.input-day:hover,
+.input-month:hover,
+.input-year:hover {
+    border-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+}
+
+.input-day:focus,
+.input-month:focus,
+.input-year:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+    ;
+    outline: none;
+}
+
+.icon .submit-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+/* RESPONSIVE ELEMENTS */
+
+@media screen and (max-width: 750px) {
+
+    nav {
+        width: 600px;
+    }
+
+    .calender {
+        justify-content: space-between;
+        width: 370px;
+    }
+
+    .input-day,
+    .input-month,
+    .input-year {
+        font-size: 21px;
+        padding-left: 10px;
+        width: 100px;
+    }
+
+
+    .hr-line span {
+        display: inline-block;
+        border-bottom: 1px solid hsl(0, 0%, 86%);
+        width: 400px;
+    }
+
+
+
+    @media screen and (max-width: 625px) {
+
+        nav {
+            width: 500px;
+        }
+
+        .calender {
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .input-day,
+        .input-month,
+        .input-year {
+            font-size: 21px;
+            padding-left: 10px;
+            width: 85px;
+        }
+
+        .hr-line span {
+            display: inline-block;
+            border-bottom: 1px solid hsl(0, 0%, 86%);
+            width: 335px;
+        }
+    }
+
+
+    @media screen and (max-width: 540px) {
+
+        nav {
+            margin: 80px auto;
+            padding: 35px 14px;
+            width: 330px;
+        }
+
+        .calender {
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .input-day,
+        .input-month,
+        .input-year {
+            font-size: 18px;
+            margin: 7px 0px;
+            padding-left: 10px;
+            width: 80px;
+        }
+
+        .icon-stage {
+            flex-direction: column;
+            transform: translateY(25px);
+        }
+
+        .hr-line span {
+            display: inline-block;
+            border-bottom: 1px solid hsl(0, 0%, 86%);
+            width: 300px;
+        }
+
+        .icon {
+            transform: translate(-5px, -30px);
+        }
+
+        .icon .submit-btn {
+            height: 8vh;
+            padding: 4px;
+        }
+
+        .icon img {
+            width: 60%;
+        }
+
+        .section {
+            font-size: 50px;
+            line-height: 1em;
+            margin: 20px 0px;
+        }
+    }
+
+
+
+
+}
